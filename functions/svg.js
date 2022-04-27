@@ -12,12 +12,6 @@ const {
 // register window and document
 registerWindow(window, document);
 
-const randomize = (min, max) => {
-  const randomPick = Math.random() * (max - min) + min;
-
-  return Math.round(randomPick);
-};
-
 let draw, mask, itemGroup;
 
 const shortcurl =
@@ -99,29 +93,7 @@ const createSVG = async (canvasWidth, canvasHeight) => {
   });
 
   itemGroup.maskWith(mask);
-  itemGroup.opacity(0.6);
-
-  // draw = SVG(document.documentElement)
-  //   .viewbox(0, 0, width, height)
-  //   .attr({
-  //     width,
-  //     height,
-  //     focusable: false,
-  //     "aria-hidden": true,
-  //   });
-
-  // canvas.rect(width, height).fill("hsl(260, 95%, 95%)");
-
-  // points.forEach(({ x, y }) => {
-  //   const color = colors[randomize(0, colors.length - 1)];
-
-  //   canvas
-  //     .circle(randomize(5, width / 10))
-  //     .cx(x)
-  //     .cy(y)
-  //     .fill(color);
-  // });
-
+  itemGroup.opacity(0.5);
   return draw.svg();
 };
 
