@@ -68,7 +68,7 @@ const createSVG = async (canvasWidth, canvasHeight) => {
 
   mask = draw.rect(canvasWidth, canvasHeight).attr({ fill: "#fff" });
   itemGroup = draw.group();
-  const numItems = 25;
+  const numItems = 32;
 
   const points = [...Array(numItems)].map(() => {
     return {
