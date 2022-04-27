@@ -93,7 +93,7 @@ const createSVG = async (canvasWidth, canvasHeight) => {
   });
 
   itemGroup.maskWith(mask);
-  itemGroup.opacity(0.5);
+  itemGroup.opacity(0.3);
   return draw.svg();
 };
 
