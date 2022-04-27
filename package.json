@@ -15,6 +15,7 @@
   },
   "homepage": "https://github.com/5t3ph/odb-generative-svg#readme",
   "dependencies": {
+    "@georgedoescode/generative-utils": "^1.0.38",
     "@netlify/functions": "^0.7.2",
     "@svgdotjs/svg.js": "^3.1.1",
     "svgdom": "^0.1.8"
